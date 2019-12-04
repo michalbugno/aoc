@@ -1,6 +1,6 @@
 defmodule Computer do
   def run(state) do
-    init_state = replace(replace(state, 1, 12), 2, 2)
+    init_state = state |> replace(1, 12) |> replace(2, 2)
     compute(init_state, 0)
   end
 
